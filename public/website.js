@@ -1,3 +1,5 @@
+
+
 document.addEventListener("DOMContentLoaded", function() {
   // Scroll to the top function
   function scrollToTop(event) {
@@ -44,9 +46,52 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
-// jQuery ready function for carousel (if using jQuery)
+// jQuery ready function for carousel 
 $(document).ready(function(){
   $('#customCarousel, #myCarousel').carousel({
     interval: 5000 // Changes the slide every 5 seconds
   });
 });
+
+
+//Create Account 
+console.log('Attempting to create account...');
+function createAccount() {
+  const firstName = document.getElementById('firstName').value;
+  const lastName = document.getElementById('lastName').value;
+
+  
+const address = document.getElementById('address').value;
+  const contactNo = document.getElementById('contactNo').value;
+  const email = document.getElementById('email').value;
+  const password = document.getElementById('password').value;
+  const
+
+confirmPassword = document.getElementById('confirmPassword').value;
+
+
+  
+if (password !== confirmPassword) {
+    alert('Passwords do not match');
+    return;
+  }
+
+  const xhr = new XMLHttpRequest();
+  xhr.open('POST', '/create-account');
+  xhr.setRequestHeader('Content-Type', 'application/json');
+  xhr.onload = () => {
+    if (xhr.status === 201) {
+      alert('Account created successfully');
+    } else {
+      alert('Failed to create account');
+    }
+  };
+  xhr.send(JSON.stringify({
+    firstName,
+    lastName,
+    address,
+    contactNo,
+    email,
+    password,
+  }));
+}

@@ -422,16 +422,16 @@ margin: 0 auto;
 .login {
 width: 50%;
 padding: 20px;
-background-color: #fff;
+background-color: #00c365;
 box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .create-account {
-border-right: 1px solid #ccc;
+border-right: 1px solid #766d6d;
 }
 
 .login {
-border-left: 1px solid #ccc;
+border-left: 1px solid #060606;
 }
 
 .create-account h1,
@@ -446,7 +446,7 @@ margin-bottom: 20px;
 width: 100;
 padding: 10px;
 margin-bottom: 10px;
-border: 1px solid #ccc;
+border: 1px solid #000000;
 }
 
 .create-account button,

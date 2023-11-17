@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Prototype-1 Social Awareness</title>
 	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
-
 <body>
 	<link href="./website.css" rel="stylesheet">
 	<script src="./website.js"></script>.
@@ -15,7 +13,7 @@
 	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js" </ <script
 		src="./dropdown.js"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
+	<script src="js/CreateAccount.js"></script>
 	<header>
 		<nav>
 			<img class="logo" src="./logo.png" width="70" alt="Advanced Consulting Services logo">
@@ -30,11 +28,7 @@
 					<a href="#">Help</a>
 					<a href="#">Sign off</a>
 				</div>
-
-
 		</nav>
-
-
 		<!--Scrolll Widget -->
 		<div id="myCarousel" class="carousel slide" data-ride="carousel">
 			<!-- Indicators -->
@@ -79,7 +73,6 @@
 		</div>
 		</a>
 		</div>
-
 		<!--tab for #search-->
 		<div class="carousel">
 			<div class="carousel-tabs">
@@ -138,14 +131,8 @@
 
 				<button id="#toggle-more-options">Show More Options</button>
 			</div>
-
 		</div>
-
-
-
 		</div>
-
-
 		</div>
 		<!--Homepage-->
 		<div class="campaign-carousel">
@@ -188,20 +175,25 @@
 					<div class="create-account">
 						<h1>Create Account</h1>
 						<center>
-							First Name:<input type="text" placeholder="First Name" width="100"><br />
-							Last Name:<input type="text" placeholder="Last Name"><br />
-							Address: <input type="text" placeholder="Address"><br />
-							Contact Number:<input type="text" placeholder="Contact Number"><br />
-							Email: <input type="text" placeholder="Email"><br />
-							Create Password:<input type="password" placeholder="Create Password"><br />
-							Confirm password:<input type="password" placeholder="Confirm Password"><br />
-							<p>By clicking Create Account you agree to user agreement, privacy policy and cookie policy.
-							</p>
-							<button>Create Account</button><br />
-							<button class="google-button">Login with Google</button><br />
-							<button class="facebook-button">Login with Facebook</button><br />
-					</div>
-					<div class="login">
+							<form action="/create-account" method="post">
+								<form action="/create-account" method="post">
+
+						  First Name:<input type="text" placeholder="First Name" width="100" id="firstName"><br />
+						  Last Name:<input type="text" placeholder="Last Name" id="lastName"><br />
+						  Address: <input type="text" placeholder="Address" id="address"><br />
+						  Contact Number:<input type="text" placeholder="Contact Number" id="contactNo"><br />
+						  Email: <input type="text" placeholder="Email" id="email"><br />
+						  Create Password:<input type="password" placeholder="Create Password" id="password"><br />
+						  Confirm Password:<input type="password" placeholder="Confirm Password" id="confirmPassword"><br />
+						  <p>
+							By clicking Create Account you agree to user agreement, privacy policy
+							and cookie policy.
+						  </p>
+						  <button onclick="createAccount()">Create Account</button><br />
+						  <button class="google-button">Login with Google</button><br />
+						  <button class="facebook-button">Login with Facebook</button><br />
+						</center>
+					  </div>				<div class="login">
 						<h1>Login</h1>
 						<center>
 							Email: <input type="text" placeholder="Email/Username"><br />
@@ -214,14 +206,12 @@
 				</div>
 		</div>
 		</section>
-
-
 		<!--DONATION for members only-->
 		<center>
 			<h1>Donation form</h1>
 			<div class="donation-form">
 				<form action="/donate" method="post">
-					First name:<input type="text" placeholder="First name" name="firstName">
+					First name:<input type="text" placeholder="First name" name="firstName"> <br/>
 					Last Name: <input type="text" placeholder="Last name" name="lastName"><br />
 					Phone Number:<input type="tel" placeholder="Phone number" name="phoneNumber"><br />
 					Email:<input type="email" placeholder="Email address" name="emailAddress"><br /><br />
@@ -236,7 +226,6 @@
 					Donate<button type="submit">Donate Now</button><br />
 				</form>
 			</div>
-
 			<!--Create Campaing-->
 			<section id="create-campaign">
 				<div class="campaign-form">
@@ -290,7 +279,6 @@
 						<button type="submit" class="btn btn-primary">Launch Campaign</button>
 					</div>
 				</div>
-
 				<main>
 					<section id="AboutUs" class="container">
 						<div class="row">
@@ -344,13 +332,9 @@
 									equitable and compassionate world for all.</p>
 							</div>
 						</div>
-
 					</section>
-
-
 					</ul>
 					<section id="AboutUs" class="container">
-
 						<section id="Contactus" class="text-center my-5">
 							<h2>Contact our team!</h2>
 							<div class="container">
@@ -369,9 +353,7 @@
 									</div>
 								</div>
 							</div>
-
 						</section>
-
 						<section id="Help" class="container">
 							<div class="row">
 								<div class="col-md-8">
@@ -387,12 +369,10 @@
 											All donations will only be processed after 24 hours as a precaution. Please
 											contact us at acshelp@acs.org for further information regarding a refund.
 										</p>
-
 										<p><strong>How to delete account?</strong><br>
 											To delete an existing account, go to "Manage Account" and press delete
 											account. Your account will be temporarily deleted for 30 days, and then
 											permanently deleted.</p>
-
 										<p><strong>Can't find your questions here?</strong><br>
 											Contact us at acshelp@acs.org or (08) 300 2000</p>
 									</div>
@@ -403,8 +383,7 @@
 									</div>
 								</div>
 							</div>
-						</section>
-<br/>
+						</section><br/>
 						<a href="#create-campaign" class="button createButton" onclick="createCampaignAlert()">Create Your Own Campaign!</a>
 					</section>
 				</main>
@@ -417,5 +396,4 @@
 					<p>Copyright &copy; 2023 Advanced Consulting Services</p>
 					<a href="#">Facebook</a> <a href="#">Instagram</a> <a href="#">Twitter</a>
 				</footer>
-
-</html>
+				</html>

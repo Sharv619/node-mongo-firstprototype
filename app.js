@@ -9,6 +9,8 @@ mongoose.connect('mongodb+srv://Team5users:teamfiveacs@cluster1.qmk7wif.mongodb.
   useUnifiedTopology: true,
 });
 
+app.use(express.json());  
+// Added this line to use the body-parser middleware
 const db = mongoose.connection;
 
 db.on('error', (err) => {
@@ -23,9 +25,11 @@ db.once('open', () => {
 app.get('/', (req, res) => {
   res.sendFile(__dirname + '/public/website.html');
 });
+//Create a data scheme model? 
 
 // Configure Express to serve static files from the 'public' directory
 app.use(express.static('public'));
+
 
 // Start the server
 app.listen(port, () => {
