@@ -1,0 +1,87 @@
+<!doctype html><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Form</title>
+  <style>
+    body {
+      font-family: sans-serif;
+    }
+
+    form {
+      width: 500px;
+      margin: 0 auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 5px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+
+    input[type="email"] {
+      width: 100%;
+      padding: 5px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+
+    input[type="password"] {
+      width: 100%;
+      padding: 5px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+
+    textarea {
+      width: 100%;
+      height: 100px;
+      padding: 5px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+
+    button {
+      background-color: #007bff;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>User Form</h1>
+  <form>
+    <label for="firstName">First Name:</label>
+    <input type="text" id="firstName" name="firstName" placeholder="Enter first name">
+
+    <label for="lastName">Last Name:</label>
+    <input type="text" id="lastName" name="lastName" placeholder="Enter last name">
+
+    <label for="address">Address:</label>
+    <textarea id="address" name="address" placeholder="Enter address"></textarea>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Enter email address">
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" placeholder="Enter password">
+
+    <label for="contactNo">Contact Number:</label>
+    <input type="text" id="contactNo" name="contactNo" placeholder="Enter contact number">
+
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>

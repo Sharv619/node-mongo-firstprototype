@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Prototype-1 Social Awareness</title>
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+	<link href="./website.css" rel="stylesheet">
+	<script src="./website.js"></script>.
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js" </ <script
+		src="./dropdown.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+	<header>
+		<nav>
+			<img class="logo" src="./logo.png" width="70" alt="Advanced Consulting Services logo">
+			<a href="#" class="futuristic-button">Home</a> <!-- Changed href to "#" -->
+			<a href="#AboutUs" class="futuristic-button">About Us</a>
+			<a href="#Contactus" class="futuristic-button">Contact Us</a>
+			<div class="dropdown">
+				<button class="futuristic-button">Login/ Sign Up </button>
+				<div id="dropdown-content" class="dropdown-content">
+					<a href="#login-logout">Create Account</a>
+					<a href="#">Manage Account</a>
+					<a href="#">Help</a>
+					<a href="#">Sign off</a>
+				</div>
+
+
+		</nav>
+
+
+		<!--Scrolll Widget -->
+		<div id="myCarousel" class="carousel slide" data-ride="carousel">
+			<!-- Indicators -->
+			<ol class="carousel-indicators">
+				<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+				<li data-target="#myCarousel" data-slide-to="1"></li>
+				<li data-target="#myCarousel" data-slide-to="2"></li>
+			</ol>
+			<!-- Wrapper for slides -->
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img src="slide1.jpg" alt="Slide 1">
+					<div class="carousel-caption top-right">
+						<h3>Placeholder Caption 1</h3>
+						<p>Description for Slide 1</p>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<img src="slide2.jpg" alt="Slide 2">
+					<div class="carousel-caption top-right">
+						<h3>Placeholder Caption 2</h3>
+						<p>Description for Slide 2</p>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<img src="slide3.jpg" alt="Slide 3">
+					<div class="carousel-caption top-right">
+						<h3>Placeholder Caption 3</h3>
+						<p>Description for Slide 3</p>
+					</div>
+				</div>
+			</div>
+			<!-- Left and right controls -->
+			<a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			</a>
+		</div>
+		</a>
+		</div>
+
+		<!--tab for #search-->
+		<div class="carousel">
+			<div class="carousel-tabs">
+				<a href="#tab1" class="futuristic-buttonMin">Healthcare</a>
+				<a href="#tab2" class="futuristic-buttonMin">Education</a>
+				<a href="#tab3" class="futuristic-buttonMin">Awarness</a>
+				<a href="#tab4" class="futuristic-buttonMin">Educational</a>
+				<input type="text" class="search-bar" placeholder="Search">
+			</div>
+			<div class="campaign-container">
+				<div class="campaign-cards">
+					<div class="campaign-card">
+						<img src="./images/helpingpeoplestock.avif" alt="This is an image">
+						<h3>Wellness Warriors Australia</h3>
+						<p>Wellness Warriors Australia in our mission to empowerHER health! This online campaign focuses
+							on raising awareness about women's health issues and promoting a holistic approach to
+							well-being. From mental health to physical fitness, our platform allows you to engage in
+							discussions, share resources, and participate in virtual events. Be a part of the movement!
+						</p>
+					</div>
+
+					<div class="campaign-card">
+						<img src="./images/manageaccount.png" alt="This is an image">
+						<h3>Education Empowers</h3>
+						<p>EduConnect Australia invites you to join our campaign, "Education Empowers," advocating for
+							accessible education for all. Through this online initiative, we aim to shed light on
+							educational disparities and brainstorm solutions. Engage in webinars, share your thoughts,
+							and let's collectively work towards a brighter future. Education is power, and together, we
+							can make a difference!</p>
+					</div>
+
+					<div class="campaign-card">
+						<img src="./images/1QW.png" alt="This is an image">
+						<h3>Campaign 3</h3>
+						<p>This is a sample campaign description.</p>
+					</div>
+
+					<div class="campaign-card hidden">
+						<img src="./images/helpingpeoplestock.avif" alt="This is an image">
+						<h3>Campaign 4</h3>
+						<p>This is a sample campaign description.</p>
+					</div>
+
+					<div class="campaign-card hidden">
+						<img src="./images/phone.png" alt="This is an image">
+						<h3>Campaign 5</h3>
+						<p>This is a sample campaign description.</p>
+					</div>
+
+					<div class="campaign-card hidden">
+						<img src="./images/manageaccount.png" alt="This is an image">
+						<h3>Campaign 6</h3>
+						<p>This is a sample campaign description.</p>
+					</div>
+				</div>
+
+				<button id="#toggle-more-options">Show More Options</button>
+			</div>
+
+		</div>
+
+
+
+		</div>
+
+
+		</div>
+		<!--Homepage-->
+		<div class="campaign-carousel">
+			<div class="carousel-inner">
+				<div class="carousel-slide active" style="background-image: url('img1.png')">
+					<div class="carousel-caption">
+						<h2>Campaign 1</h2>
+						<p>EmpowerHER Health Campaign by Wellness Warriors Australia.</p>
+					</div>
+				</div>
+				<div class="carousel-slide" style="background-image: url('img2.jpg')">
+					<div class="carousel-caption">
+						<h2>Campaign 2</h2>
+						<p>This is the content for Campaign 2.</p>
+					</div>
+				</div>
+				<div class="carousel-slide" style="background-image: url('img3.png')">
+					<div class="carousel-caption">
+						<h2>Campaign 3</h2>
+						<p>This is the content for Campaign 3.</p>
+					</div>
+				</div>
+
+				<a href="#" class="campaign-carousel-control-prev" role="button" data-slide="prev">
+					<span class="campaign-carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a href="#" class="campaign-carousel-control-next" role="button" data-slide="next">
+					<span class="campaign-carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="sr-only">Next</span>
+				</a>
+			</div>
+			<!--Create An account-->
+			<center>
+				<h1>Become a member</h1>
+			</center>
+			<section id="login-logout">
+
+				<div class="login-logout">
+					<div class="create-account">
+						<h1>Create Account</h1>
+						<center>
+							First Name:<input type="text" placeholder="First Name" width="100"><br />
+							Last Name:<input type="text" placeholder="Last Name"><br />
+							Address: <input type="text" placeholder="Address"><br />
+							Contact Number:<input type="text" placeholder="Contact Number"><br />
+							Email: <input type="text" placeholder="Email"><br />
+							Create Password:<input type="password" placeholder="Create Password"><br />
+							Confirm password:<input type="password" placeholder="Confirm Password"><br />
+							<p>By clicking Create Account you agree to user agreement, privacy policy and cookie policy.
+							</p>
+							<button>Create Account</button><br />
+							<button class="google-button">Login with Google</button><br />
+							<button class="facebook-button">Login with Facebook</button><br />
+					</div>
+					<div class="login">
+						<h1>Login</h1>
+						<center>
+							Email: <input type="text" placeholder="Email/Username"><br />
+							Password:<input type="password" placeholder="Password"><br />
+							<button>Login</button><br />
+							<button class="google-button">Login with Google</button><br />
+							<button class="facebook-button">Login with Facebook</button>
+						</center>
+					</div>
+				</div>
+		</div>
+		</section>
+
+
+		<!--DONATION for members only-->
+		<center>
+			<h1>Donation form</h1>
+			<div class="donation-form">
+				<form action="/donate" method="post">
+					First name:<input type="text" placeholder="First name" name="firstName">
+					Last Name: <input type="text" placeholder="Last name" name="lastName"><br />
+					Phone Number:<input type="tel" placeholder="Phone number" name="phoneNumber"><br />
+					Email:<input type="email" placeholder="Email address" name="emailAddress"><br /><br />
+					How much do you wish to donate?:<input type="number" placeholder="How much do you wish to donate?"
+						name="donationAmount"><br />
+					Billing Address: <input type="text" placeholder="Billing address" name="billingAddress"><br />
+					Adress Line1:<input type="text" placeholder="Address line 1" name="addressLine1"><br />
+					Address Line 2: <input type="text" placeholder="Address line 2" name="addressLine2"><br />
+					City:<input type="text" placeholder="City" name="city"><br />
+					State:<input type="text" placeholder="State" name="state"><br />
+					Postcode:<input type="text" placeholder="Postcode" name="postcode"><br />
+					Donate<button type="submit">Donate Now</button><br />
+				</form>
+			</div>
+
+			<!--Create Campaing-->
+			<section id="create-campaign">
+				<div class="campaign-form">
+					<h2>Create Campaign</h2>
+					<div class="form-group">
+						<label for="campaign-title">Campaign Title</label>
+						<input type="text" class="form-control" id="campaign-title"
+							placeholder="Enter a campaign title">
+					</div>
+
+					<div class="form-group">
+						<label for="campaign-description">Campaign Description</label>
+						<textarea class="form-control" id="campaign-description"
+							placeholder="Enter a campaign description"></textarea>
+					</div>
+
+					<div class="form-group">
+						<label for="target-audience">Target Audience</label>
+						<input type="text" class="form-control" id="target-audience"
+							placeholder="Enter the target audience for this campaign">
+					</div>
+
+					<div class="form-group">
+						<label for="issue-cause">Issue/Cause</label>
+						<input type="text" class="form-control" id="issue-cause"
+							placeholder="Enter the issue or cause that this campaign is addressing">
+					</div>
+
+					<div class="form-group">
+						<label for="expected-outcomes">Expected Outcomes</label>
+						<textarea class="form-control" id="expected-outcomes"
+							placeholder="Enter the expected outcomes of this campaign"></textarea>
+					</div>
+
+					<div class="form-group">
+						<label for="supporting-materials">Supporting Materials</label>
+						<div class="drag-and-drop-file-upload">
+							<p>Please provide any supporting materials such as images, videos, or relevant documents
+								that can help illustrate the campaign's purpose and significance.</p>
+							<input type="file" multiple label="Select files" placeholder="Upload one or more files">
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label for="donation-goals">Donation Goals</label>
+						<input type="number" class="form-control" id="donation-goals"
+							placeholder="Enter the donation goals for this campaign">
+					</div>
+
+					<div class="form-group">
+						<button type="submit" class="btn btn-primary">Launch Campaign</button>
+					</div>
+				</div>
+
+				<main>
+					<section id="AboutUs" class="container">
+						<div class="row">
+							<div class="col-lg-8">
+								<h1>AboutUs!</h1>
+								<h2>Our Vision</h2>
+								<p>At Advanced Consulting Services, our vision is to foster a world where every voice
+									matters, and every social cause has the opportunity to create a meaningful impact.
+									We envision a society where collaboration and empathy drive positive change, and
+									where individuals and businesses unite to address pressing social issues and
+									contribute to the betterment of communities worldwide.</p>
+								<h2>Who We Are</h2>
+								<p>Advanced Consulting Services is a dedicated team of professionals committed to
+									leveraging technology for social good. With a passion for empowering individuals and
+									businesses to make a difference, we strive to provide a digital platform that serves
+									as a catalyst for meaningful social change and community engagement.</p>
+								<h2>Our Mission</h2>
+								<p>Our mission is to create an inclusive and dynamic online space that encourages active
+									participation in social causes and fosters a sense of unity among diverse
+									communities. We aim to facilitate connections and collaboration between passionate
+									individuals, businesses, and community organizations, empowering them to amplify
+									their impact and drive sustainable, positive transformations.</p>
+							</div>
+							<div class="col-lg-4 text-center">
+								<img src="Aboutimage1.jpg" alt="Our Vision" class="img-fluid"
+									style="margin-bottom: 30px;">
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-lg-4 text-center">
+								<img src="Aboutimage2.jpg" alt="Our Community" class="img-fluid"
+									style="margin-bottom: 30px;">
+							</div>
+							<div class="col-lg-8">
+
+								<h2>Our Values</h2>
+								<p>Guided by our core values of empathy, collaboration, and social responsibility, we
+									are dedicated to fostering an environment of inclusivity and respect. We believe in
+									the power of collective action and the importance of creating a supportive community
+									that values diversity, equity, and the promotion of social justice.</p>
+								<h2>What We Do</h2>
+								<p>At Advanced Consulting Services, we provide a comprehensive social awareness platform
+									that enables users to create, participate in, and promote campaigns focused on
+									various social causes. Our platform serves as a bridge between change-makers and
+									small businesses, facilitating the sharing of ideas, resources, and support, to
+									drive meaningful social impact and promote community development.</p>
+								<h2>Join Our Community</h2>
+								<p>Join us in our mission to make a difference. Become a part of our vibrant community
+									of change-makers, businesses, and advocates dedicated to driving positive change and
+									fostering meaningful connections. Together, let's work towards building a more
+									equitable and compassionate world for all.</p>
+							</div>
+						</div>
+
+					</section>
+
+
+					</ul>
+					<section id="AboutUs" class="container">
+
+						<section id="Contactus" class="text-center my-5">
+							<h2>Contact our team!</h2>
+							<div class="container">
+								<div class="row justify-content-center">
+									<div class="col-md-4 contact-item">
+										<img src="Contactimg1.jpg" alt="Phone" class="contact-icon">
+										<p>Call us at (08) 300 2000<br>Text us at (04) 300 3000</p>
+									</div>
+									<div class="col-md-4 contact-item">
+										<img src="Contactimg2.jpg" alt="Email" class="contact-icon">
+										<p>Email us at: acshelp@acs.org</p>
+									</div>
+									<div class="col-md-4 contact-item">
+										<img src="Contactimg3.jpg" alt="Help Center" class="contact-icon">
+										<p>Visit our Help Centre for FAQ’s<br><a href="#">Help Centre -></a></p>
+									</div>
+								</div>
+							</div>
+
+						</section>
+
+						<section id="Help" class="container">
+							<div class="row">
+								<div class="col-md-8">
+									<div class="help-header">
+										<h1>Help Centre</h1>
+										<h2>Frequency Asked Questions</h2>
+										<p><strong>How do I create a campaign?</strong><br>
+											To create campaigns, you have to first register an account with ACS. You
+											will be able to create a campaign under the "Create Campaign" option from
+											your profile name.</p>
+
+										<p><strong>How do I cancel my donation?</strong><br>
+											All donations will only be processed after 24 hours as a precaution. Please
+											contact us at acshelp@acs.org for further information regarding a refund.
+										</p>
+
+										<p><strong>How to delete account?</strong><br>
+											To delete an existing account, go to "Manage Account" and press delete
+											account. Your account will be temporarily deleted for 30 days, and then
+											permanently deleted.</p>
+
+										<p><strong>Can't find your questions here?</strong><br>
+											Contact us at acshelp@acs.org or (08) 300 2000</p>
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="help-image">
+										<img src="helpimg.jpg" alt="Help Image" class="img-fluid">
+									</div>
+								</div>
+							</div>
+						</section>
+<br/>
+						<a href="#create-campaign" class="button createButton" onclick="createCampaignAlert()">Create Your Own Campaign!</a>
+					</section>
+				</main>
+				<!--Footer-->
+				<footer id="footer">
+					<div class="contact">
+						<section id="Contact"></section>
+						<p>Phone: (08) 300 2000 Email: acshelp@acs.org</p>
+					</div>
+					<p>Copyright &copy; 2023 Advanced Consulting Services</p>
+					<a href="#">Facebook</a> <a href="#">Instagram</a> <a href="#">Twitter</a>
+				</footer>
+
+</html>
