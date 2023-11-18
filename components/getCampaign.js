@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-const Campaign = require("./models/campaign");
+const Campaign = require("../models/campaign");
 
 mongoose.connect('mongodb+srv://Team5users:teamfiveacs@cluster1.qmk7wif.mongodb.net/', {
   useNewUrlParser: true,
