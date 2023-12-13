@@ -31,13 +31,7 @@ app.get('/', (req, res) => {
 app.use(express.static('public'));
 
 
-// Start the server
-app.listen(port, () => {
-  console.log(`Server is running on http://localhost:${port}`);
-});
 
-
-// Import and use the route handlers from CreateAccount.js and LoginLogout.js
 
 //For authentication
 const jwt = require('./jwt'); // Import the JWT module
