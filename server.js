@@ -5,7 +5,7 @@ const bodyParser = require('body-parser');
 
 app.use(bodyParser.urlencoded({ extended: true }));
 
-mongoose.connect('mongodb+srv://Team5users:teamfiveacs@cluster1.qmk7wif.mongodb.net/test');
+connectMongoClient('mongodb+srv://Team5users:teamfiveacs@cluster1.qmk7wif.mongodb.net/test');
 
 // Handle form submissions
 app.post('/submit', (req, res) => {

@@ -4,14 +4,14 @@ const mongoose = require('mongoose');
 const app = express();
 const port = process.env.PORT || 3000;
 
-mongoose.connect('mongodb+srv://Team5users:teamfiveacs@cluster1.qmk7wif.mongodb.net/', {
+connectMongoClient('mongodb+srv://Team5users:teamfiveacs@cluster1.qmk7wif.mongodb.net/', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
 
 app.use(express.json());  
 // Added this line to use the body-parser middleware
-const db = mongoose.connection;
+const db = connectMongoCliention;
 
 db.on('error', (err) => {
   console.error('MongoDB connection error:', err);
